@@ -1,0 +1,80 @@
+.strategy {
+   position: relative;
+
+   &__container {
+   }
+
+   &__inner {
+      padding: 71px 0 20px;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &__decoration {
+
+   }
+
+   &__content {
+      max-width: 580px;
+   }
+
+   &__title {
+
+      & h3 {
+         position: relative;
+
+         &::after {
+            content: 'Стратегія';
+            position: absolute;
+            top: -10px;
+            left: -22px;
+            font-weight: bold;
+            font-size: 87px;
+            line-height: 64px;
+            text-transform: uppercase;
+            color: rgba(61, 48, 40, 0.13);
+
+         }
+
+         
+         &.animation {
+            left: 150%;
+            opacity: 0;
+         }
+
+         &.animation-active {
+            transition-delay: 250ms;
+            left: 0;
+            opacity: 1;
+         }
+      }
+   }
+
+   &__main {
+   }
+
+   &__text {
+      max-width: 512px;
+      line-height: 202.9%;
+      margin-bottom: 62px;
+
+
+      
+         &.animation {
+            left: 150%;
+            opacity: 0;
+         }
+
+         &.animation-active {
+            transition-delay: 800ms;
+            left: 0;
+            opacity: 1;
+         }
+   }
+
+   &__columns {
+   }
+}
+
+
+

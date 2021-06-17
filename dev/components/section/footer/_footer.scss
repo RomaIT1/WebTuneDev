@@ -1,0 +1,111 @@
+.footer {
+   font-weight: 300;
+   &__main {
+   }
+
+   &__copyright {
+      
+   }
+}
+.footer-main {
+   border: 0.5px solid rgba(61, 48, 40, 0.2);
+   
+   &__container {
+   }
+
+   &__inner {
+      padding: 75px 0 48px 50px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__text {
+      max-width: 308px;
+      line-height: 161.96%;
+   }
+
+   &__nav {
+   }
+
+   &__info {
+      line-height: 20px;
+   }
+
+   &__place {
+   }
+
+   &__country {
+      font-weight: 700;
+   }
+
+   &__sity {
+   }
+
+   &__street {
+      margin-bottom: 30px;
+   }
+
+   &__tel {
+
+      transition-duration: $DURATION;
+
+      @media (min-width: $TABLET){
+         &:hover {
+            text-decoration: underline;
+            font-weight: 400;
+         }
+      }
+   }
+
+   &__tel-item {
+   }
+
+   &__social {
+
+      & .social__items {
+         display: block;
+      }
+
+      & .social__item {
+         margin: 0 0 18px 0;
+      }
+   }
+}
+.footer-nav {
+
+   &__items {
+   }
+
+   &__item {
+      margin-bottom: 12px;
+      font-size: 16px;
+   }
+
+   &__link {
+      display: inline-block;
+      padding: 10px;
+      transition-duration: $DURATION;
+
+      @media (min-width: $TABLET){
+         &:hover {
+            text-decoration: underline;
+            font-weight: 400;
+         }
+      }
+   }
+}
+
+.footer-copyright {
+
+   &__container {
+   }
+
+   &__inner {
+      padding: 8px 0 20px 50px;
+      color: rgba(61, 48, 40, 0.29);
+   }
+
+   &__author {
+      letter-spacing: 0.005em;
+   }
+}

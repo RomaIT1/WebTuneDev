@@ -1,0 +1,149 @@
+.offers {
+   position: relative;
+   background-color: #412C1E;
+
+   &__cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      mix-blend-mode: overlay;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__leaf-dec {
+      position: absolute;
+      top: -135px;
+      left: 90px;
+      z-index: 3;
+
+      &.animation {
+         top: -135px;
+         left: 90px;
+         transform: rotate(0deg);
+      }
+
+      &.animation-active {
+         top: 350px;
+         left: 150px;
+         transition-duration: 4000ms;
+         transition-delay: 600ms;
+         transform: rotate(-20deg);
+      }
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 56.35%);
+      opacity: 0.3;
+   }
+
+   &__container {
+   }
+
+   &__inner {
+      padding: 115px 0 105px;
+      position: relative;
+      z-index: 5;
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+      color: $white;
+      text-align: center;
+      max-width: 769px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+
+      & .title__main {
+         margin: 0 auto;
+         margin-bottom: 28px;
+         font-size: 42px;
+         max-width: 650px;
+
+         &.animation {
+            position: relative;
+            left: 150%;
+            opacity: 0;
+         }
+   
+         &.animation-active {
+            transition-delay: 100ms;
+            left: 0%;
+            opacity: 1;
+         }
+      }
+
+      & .title__sub {
+         font-weight: 400;
+
+         &.animation {
+            position: relative;
+            left: 150%;
+            opacity: 0;
+         }
+   
+         &.animation-active {
+            transition-delay: 500ms;
+            left: 0%;
+            opacity: 1;
+         }
+      }
+   }
+
+   &__active {
+
+      &.animation {
+         position: relative;
+         left: 150%;
+         opacity: 0;
+      }
+
+      &.animation-active {
+         transition-delay: 1000ms;
+         left: 0%;
+         opacity: 1;
+      }
+
+   }
+
+   &__link {
+      font-weight: bold;
+      line-height: 26px;
+      padding: 12px 19px;
+      border-radius: 100px;
+      border: 2px solid #FFFFFF;
+      color: $white;
+      margin-left: 30px;
+      transition-duration: $DURATION;
+
+      @media (min-width: $TABLET){
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+
+      &:first-child {
+         margin-left: 0;
+      }
+
+      &--order {
+         padding: 12px 14px;
+         background-color: $white;
+         color: $brown;
+      }
+   }
+}

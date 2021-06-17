@@ -1,0 +1,92 @@
+.strategy-columns {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   &__item {
+      display: flex;
+      margin-bottom: 67px;
+      position: relative;
+
+      &.animation {
+         left: 150%;
+         opacity: 0;
+      }
+
+      &--1 {
+         
+         &.animation-active {
+            transition-delay: 800ms;
+            left: 0;
+            opacity: 1;
+         }
+      }
+
+      &--2 {
+         
+         &.animation-active {
+            left: 0;
+            opacity: 1;
+            transition-delay: 1000ms;
+         }
+      }
+
+      &--3 {
+         
+         &.animation-active {
+            left: 0;
+            opacity: 1;
+            transition-delay: 1200ms;
+         }
+      }
+
+      &--4 {
+         
+         &.animation-active {
+            left: 0;
+            opacity: 1;
+            transition-delay: 1400ms;
+         }
+      }
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 6px;
+         left: -23px;
+         background: url(../images/strategy/leaf.png) no-repeat;
+         background-size: contain;
+         width: 70px;
+         height: 84px;
+         z-index: 1;
+         filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.38));
+      }
+   }
+
+   &__num {
+      padding-top: 15px;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 64px / 48px * 100%;
+      text-transform: uppercase;
+      color: $white;
+      z-index: 2;
+   }
+
+   &__info {
+      max-width: 175px;
+      margin-left: 44px;
+   }
+
+   &__title {
+      margin-bottom: 4px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px / 20px * 100%;
+   }
+
+   &__text {
+      font-size: 16px;
+      line-height: 26px;
+   }
+}

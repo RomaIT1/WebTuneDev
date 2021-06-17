@@ -1,0 +1,42 @@
+//Подключение libs
+@import '../static/css/libs/swiper-bundle.min.scss';
+
+//Подключение settings (main settings project)
+@import 'settings.scss';
+
+//Подключение views (reset styles, fonts)
+@import '../scss/static/reset.scss';
+@import '../scss/static/fonts.scss';
+
+//Подключение system (system files)
+@import '../scss/system.scss';
+
+//Подключение widgets (widgets element)
+@import 'widgets/nav.scss';
+@import 'widgets/logo.scss';
+@import 'widgets/interactive.scss';
+@import 'widgets/title.scss';
+@import 'widgets/social.scss';
+@import 'widgets/menu-icon.scss';
+@import 'widgets/menu.scss';
+@import 'widgets/welcome-decor.scss';
+@import 'widgets/lang.scss';
+@import 'widgets/strategy-columns.scss';
+@import 'widgets/strategy-decoration.scss';
+@import 'widgets/task-decoration.scss';
+@import 'widgets/result-columns.scss';
+
+//Подключение components (main components, section)
+@import 'section/header/header';
+
+//SECTION---
+@import 'section/welcome/welcome';
+@import 'section/client/client';
+@import 'section/strategy/strategy';
+@import 'section/task/task';
+@import 'section/result/_result';
+@import 'section/offers/offers';
+
+//---
+
+@import 'section/footer/footer';

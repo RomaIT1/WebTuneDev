@@ -1,0 +1,45 @@
+//Палитра цветов
+$white: #ffffff;
+$mondo: #3D3028;
+$potters-clay: #825438;
+$black: #000000;
+
+$white: $white;
+$brown: $mondo;
+$lite-brown: $potters-clay;
+
+
+//Главный ограничивающий контейнер
+$CONTAINER_WIDTH: 1280px;
+
+//Стили для тега body
+$FONT_FAMILY_DEFAULT: 'Montserrat', sans-serif;
+
+$FONT_SIZE: 14px;
+
+$FONT_WEIGHT: 500;
+
+$COLOR: $brown;
+
+//Чек-поинты устройств
+$DESKTOP_WIDE: 1920px;
+$DESKTOP: 1440px;
+$TABLET_WIDE: 1000px;
+$TABLET: 768px;
+$PHABLET: 560px;
+$MOBILE: 480px;
+
+
+//@media (max-width: $DESKTOP) {}
+//@media (max-width: $TABLET_WIDE) {}
+//@media (max-width: $TABLET) {}
+//@media (max-width: $PHABLET) {}
+//@media (max-width: $MOBILE) {}
+
+//Значение transition-duration для анимаций
+$DURATION: 280ms;
+
+.animation {
+   transition-duration: 1000ms;
+}
+

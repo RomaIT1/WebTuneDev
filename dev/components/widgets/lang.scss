@@ -1,0 +1,36 @@
+
+.lang {
+
+   &__items {
+      display: flex;
+   }
+
+   &__item {
+      font-size: 16px;
+      margin-left: 9px;
+
+      &.lang__item--active {
+         font-weight: 800;
+      }
+
+      &:first-child {
+         margin-left: 0;
+      }
+   }
+
+   &__item--active {
+   }
+
+   &__link {
+      display: inline-block;
+      padding: 10px;
+      transition-duration: $DURATION;
+
+      @media (min-width: $TABLET){
+         &:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+         }
+      }
+   }
+}

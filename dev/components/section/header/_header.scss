@@ -1,0 +1,43 @@
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+   background-color: rgba($brown, 0);
+
+   &._scroll div div {
+      padding: 4px 0;
+   }
+
+   &._scroll {
+      background-color: rgba($brown, 0.98);
+      box-shadow: 0 0 10px rgba($white, 0.5);
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 37px 0;
+      transition-duration: $DURATION;
+   }
+
+   &__logo {
+   }
+
+   &__nav {
+   }
+
+   &__menu {
+   }
+}
+
+
+@media (max-width: $TABLET-WIDE) {
+   .header {
+      &__inner {
+         padding: 8px 0;
+      }
+   }
+}

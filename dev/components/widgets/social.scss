@@ -1,0 +1,31 @@
+.social {
+   z-index: 10;
+   &__items {
+      display: flex;
+      align-items: center;
+
+   }
+   
+   &__item {
+      margin-left: 20px;
+
+      &:first-child {
+         margin-left: 0;
+      }
+   }
+
+   &__link {
+      transition-duration: $DURATION;
+      
+      @media (min-width: $TABLET){
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+     
+   }
+
+   &__image {
+
+   }
+}

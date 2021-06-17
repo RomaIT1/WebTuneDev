@@ -1,0 +1,48 @@
+.task-decoration {
+   width: 350px;
+
+   &__image {
+     position: absolute;
+     top: 0;
+     left: 0;
+
+      &.animation {
+         left: 150%;
+      }
+     
+   }
+
+   &__image--timbers {
+
+      &.animation-active {
+         transition-delay: 100ms;
+         left: 0%;
+      }
+   }
+
+   &__image--timber-1 {
+      top: 0;
+      left: 0;
+      filter: blur(6px);
+      top: -141px;
+      left: -38px;
+      opacity: 0.8;
+
+      &.animation-active {
+         transition-delay: 400ms;
+         left: -38px;
+      }
+   }
+
+   &__image--timber-2 {
+      top: 410px;
+      left: 86px;
+      filter: blur(6px);
+      opacity: 0.8;
+
+      &.animation-active {
+         transition-delay: 200ms;
+         left: 86px;
+      }
+   }
+}

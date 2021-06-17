@@ -1,0 +1,80 @@
+.result {
+   position: relative;
+
+   &__container {
+   }
+
+   &__inner {
+      padding: 20px 0 70px;
+   }
+
+   &__title {
+      margin-bottom: 12px;
+
+      & .title__main {
+         margin-bottom: 3px;
+         position: relative;
+
+         &.animation {
+            left: -150%;
+         }
+   
+         &.animation-active {
+            transition-delay: 100ms;
+            left: 0%;
+         }
+
+         &::after {
+            content: 'Результати';
+            position: absolute;
+            top: -12px;
+            left: -13px;
+            font-weight: bold;
+            font-size: 87px;
+            line-height: 64px;
+            text-transform: uppercase;
+            color: rgba(61, 48, 40, 0.13);
+         }
+      }
+
+      & .title__sub {
+         
+         &.animation {
+            left: -150%;
+            position: relative;
+         }
+   
+         &.animation-active {
+            transition-delay: 300ms;
+            left: 0%;
+         }
+      }
+   }
+
+   &__columns {
+      z-index: 2;
+      position: relative;
+   }
+
+   &__dec-leaf {
+      position: absolute;
+      top: -10px;
+      right: 0;
+
+      &--left {
+         top: 395px;
+         left: 0;
+         filter: blur(5px);
+         opacity: 0.5;
+
+         &.animation {
+            left: -150%;
+         }
+   
+         &.animation-active {
+            transition-delay: 600ms;
+            left: 0%;
+         }
+      }
+   }
+}

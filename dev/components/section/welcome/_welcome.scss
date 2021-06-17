@@ -1,0 +1,213 @@
+.welcome {
+   background-color: #412C1E;
+   position: relative;
+   padding: 134px 0 0;
+   color: $white;
+
+   &__leaf {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition-duration: 600ms;
+      
+      &.animation {
+         left: -130%;
+      }
+
+      &--1 {
+         width: 70px;
+         top: 2px;
+         left: 610px;
+         transform: rotate(-81.9deg);
+         
+
+         &.animation-active {
+            left: 610px;
+            transition-delay: 1100ms;
+   
+         }
+      }
+      &--2 {
+         width: 40px;
+         top: 47px;
+         left: 164px;
+         
+
+         &.animation-active {
+            left: 164px;
+            transition-delay: 1200ms;
+         }
+      }
+      &--3 {
+         width: 32px;
+         top: 240px;
+         left: 360px;
+         transform: rotate(-67.35deg);
+         
+
+         &.animation-active {
+            left: 360px;
+            transition-delay: 1200ms;
+         }
+      }
+      &--4 {
+         width: 31px;
+         top: 255px;
+         left: -17px;
+         transform: rotate(-75deg);
+         
+
+         &.animation-active {
+            left: -17px;
+            transition-delay: 1200ms;
+         }
+      }
+      &--5 {
+         width: 24px;
+         top: 585px;
+         left: 252px;
+         transform: rotate(-67.35deg);
+         
+
+         &.animation-active {
+            left: 252px;
+            transition-delay: 1100ms;
+         }
+      }
+      &--6 {
+         width: 70px;
+         top: 564px;
+         left: 485px;
+         
+
+         &.animation-active {
+            left: 485px;
+            transition-delay: 1200ms;
+         }
+      }
+      &--7 {
+         width: 32px;
+         top: 711px;
+         left: 590px;
+         transform: rotate(-67.35deg);
+        
+         &.animation-active {
+            left: 590px;
+            transition-delay: 1000ms;
+
+         }
+      }
+      &--8 {
+         width: 128px;
+         top: 763px;
+         left: 10px;
+      
+
+         &.animation-active {
+            left: 10px;
+            transition-delay: 1000ms;
+         }
+      }
+   }
+
+   &__cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      mix-blend-mode: overlay;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 56.35%);
+      opacity: 0.3;
+   }
+
+   &__container {
+
+   }
+
+   &__inner {
+      position: relative;
+      padding: 62px + 166px 0 80px;
+      z-index: 10;
+   }
+
+   &__content {
+      padding-bottom: 340px;
+      max-width: 512px;
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+   }
+
+   &__label {
+      font-size: 20px;
+      line-height: 98px;
+      transition-duration: 1000ms;
+      transition-delay: 50ms;
+
+      &.animation {
+         position: relative;
+         left: -150%;
+         opacity: 0;
+      }
+
+      &.animation-active {
+         opacity: 1;
+         left: 0;
+      }
+   }
+
+   &__title {
+      transition-delay: 350ms;
+      transition-duration: 1000ms;
+      font-size: 64px;
+      line-height: 98px;
+      
+      &.animation {
+         position: relative;
+         left: -150%;
+         opacity: 0;
+      }
+
+      &.animation-active {
+         opacity: 1;
+         left: 0;
+      }
+   }
+
+   &__text {
+      transition-delay: 700ms;
+      transition-duration: 1000ms;
+      font-size: 24px;
+      line-height: 35px;
+
+      &.animation {
+         position: relative;
+         left: -150%;
+         opacity: 0;
+      }
+
+      &.animation-active {
+         opacity: 1;
+         left: 0;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}

@@ -1,0 +1,82 @@
+.menu {
+   color: $white;
+   display: flex;
+   align-items: center;
+
+   @media (max-width: $TABLET_WIDE){
+      display: none;
+   }
+
+   &__label {
+   }
+
+   &__icon {
+      width: 63px;
+      height: 60px;
+      background-color: $white;
+      margin-left: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition-duration: 500ms;
+
+      &:hover span span {
+         width: 100%;
+      }
+
+      & span {
+         width: 24px;
+         height: 24px;
+         position: relative;
+
+         & span,
+         &::before,
+         &::after {
+            position: absolute;
+            height: 1.5px;
+            width: 100%;
+            left: 0;
+            background-color: $lite-brown;
+            transition-duration: $DURATION;
+         }
+
+         &::before,
+         &::after {
+            content: '';
+         }
+
+         &::before {
+            top: 0;
+         }
+
+         &::after {
+            bottom: 0;
+            
+         }
+         & span {
+            top: 50%;
+            transform: translate(0, -50%) scale(1);
+            width: 16px;
+         }
+      }
+      &._active {
+         transform: rotate(90deg);
+         border-radius: 50%;
+      }
+
+      &._active span span {
+         transform: translate(0, -50%) scale(0);
+      }
+
+      &._active span::before {
+         top: 50%;
+         transform: translate(0, -50%) rotate(-45deg);
+      }
+
+      &._active span::after {
+         bottom: 50%;
+         transform: translate(0, 50%) rotate(45deg);
+      }
+   }
+}
